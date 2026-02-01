@@ -24,5 +24,5 @@ df = pd.concat([df, duplicates], ignore_index=True)
 # Introduce outliers
 df.loc[np.random.choice(df.index, 5), "sale_amount"] = 5000
 
-df.to_csv("data/raw/simulated_sales.csv", index=False)
+df.to_csv(r"C:\Users\thobi\Downloads/simulated_sales.csv", index=False)
 
